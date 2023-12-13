@@ -1,0 +1,23 @@
+<div class="col-6 p-5">
+    <div class="row-2">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+            </tr>
+            </thead>
+            {{ range $ind,$item := .}}
+
+            <tbody>
+            <tr>
+                <td> {{$ind}} </td>
+                <td> {{$item.Name}} </td>
+                <td> {{$item.Age}} </td>
+            </tr>
+            </tbody>
+            {{end}}
+        </table>
+    </div>
+</div>
